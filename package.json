@@ -1,0 +1,26 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratimvengurlekar/shopping-cart.git"
+  },
+  "keywords": [],
+  "author": "pratim vengurlekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratimvengurlekar/shopping-cart/issues"
+  },
+  "homepage": "https://github.com/pratimvengurlekar/shopping-cart#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
