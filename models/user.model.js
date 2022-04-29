@@ -27,6 +27,14 @@ class User {
 
     }
 
+    getUserwithSameUsername(){
+       return database.getDb().collection('users').findOne({email : this.email})
+    }
+
+    hasMatchingPssword(hashedPassword){
+        return bcryptjs.compare(this.password, hashedPassword)
+    }
+
     
 }
 
