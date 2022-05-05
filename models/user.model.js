@@ -31,6 +31,15 @@ class User {
        return database.getDb().collection('users').findOne({email : this.email})
     }
 
+    async userNameExists(){
+       let existingUser = await this.getUserwithSameUsername()
+       if(existingUser){
+           return true
+       }
+
+       return false
+    }
+
     hasMatchingPssword(hashedPassword){
         return bcryptjs.compare(this.password, hashedPassword)
     }

@@ -12,7 +12,7 @@ function getDb(){
         throw new Error('Connect to database first!!!')
     }
     return database
-}
+}   
 
 module.exports = {
     connectToDatabase : connectToDatabase,
