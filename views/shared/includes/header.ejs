@@ -1,21 +1,19 @@
-<header>
+<header id="main-header">
 
-    <div>
-        <a href="">WDA</a>
-        <nav>
-            <ul>
-                <% if(locals.isAuth) {%> 
-                <li>
-                    <form action="/logout" method="post">
-                        <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
+    <div id="logo"><a href="">WDA</a></div>
 
-                        <button>logout</button>
-
-                    </form>
-                    
-                </li>
-                <% } %> 
-            </ul>
-        </nav>
-    </div>
+    <nav>
+       <%- include('nav-item-list') %> 
+    </nav>
+    <button id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </header>
+<aside id="mobile-menu">
+    <nav>
+        <%- include('nav-item-list') %> 
+
+    </nav>
+</aside>

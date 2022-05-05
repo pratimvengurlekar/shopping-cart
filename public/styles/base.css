@@ -69,8 +69,34 @@ a{
     cursor: pointer;
     padding: var(--space-2) var(--space-6);
 }
+.btn-alt{
+    background-color: transparent;
+    color: var(--color-primary-500);
+}
+.btn-alt:hover, .btn-alt:active{
+    background-color: var(--color-primary-500-bg);
+}
 
 .btn:hover, .btn:active{
     background-color: var(--color-primary-700);
     border-color: var(--color-primary-700);
+}
+
+.alert{
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-error-100);
+    color: var(--color-error-500);
+    padding: var(--space-4);
+
+
+}
+
+.alert h2{
+    margin: var(--space-2) 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.alert p{
+    margin: var(--space-2) 0;
 }
