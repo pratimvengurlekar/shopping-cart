@@ -9,6 +9,7 @@ routes.get('/products/new', adminController.getNewProduct)
 routes.post('/products',multerMiddleware, adminController.createNewProduct)
 routes.get('/products/:id', adminController.getUpdateProduct)
 routes.post('/products/:id',multerMiddleware, adminController.updateProduct)
+routes.delete('/products/:id',adminController.deleteProduct)
 
 
 

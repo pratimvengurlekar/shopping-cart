@@ -77,7 +77,13 @@ class Product{
     }
 
     replaceImage(newImage){
+        this.image = newImage
+        this.updateImageData()
 
+    }
+    delete(){
+        let productId = new mongodb.ObjectId(this.id)
+        return db.getDb().collection('products').deleteOne({_id: productId})
     }
 }
 
