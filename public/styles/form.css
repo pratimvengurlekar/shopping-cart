@@ -15,3 +15,17 @@ input, textarea{
     border-radius: var(--border-radius-small);
     border: none;
 }
+#product-image-control{
+    display: flex;
+    align-items: center;
+}
+#product-image-control input{
+    max-width: 15rem;
+}
+#product-image-control img{
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    display: none;
+    border-radius: var(--border-radius-small);
+}
